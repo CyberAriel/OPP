@@ -1,10 +1,4 @@
-//============================================================================
-// Name        : Lab1Zad0Structuralnie.cpp
-// Author      : 
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+
 
 #include <iostream>
 using namespace std;
@@ -33,23 +27,23 @@ int main() {
 		string odp;
 		cout << "Pytanie nr: " << i << endl;
 		cout << Wczytaj[i].pytanie << endl;
-		cout << "Odp a:" << Wczytaj[i].oa<< endl;
-		cout << "Odp b:" << Wczytaj[i].ob<< endl;
-		cout << "Odp c:" << Wczytaj[i].oc<< endl;
+		cout << "Odp A:" << Wczytaj[i].oa<< endl;
+		cout << "Odp B:" << Wczytaj[i].ob<< endl;
+		cout << "Odp C:" << Wczytaj[i].oc<< endl;
 		cout << "Twoja odpowiedz?: " << flush;
-			        cin >> odp;
-			        if (odp==Wczytaj[i].odpowiedz)
-			        {
-			        	cout <<"Dobra odpowiedź"<<endl;
-			        	punkty++;
-			        }else
-			        {
-			       	    cout <<"Zła odpowiedź"<<endl;
-			        }
+		cin >> odp;
+		if (odp==Wczytaj[i].odpowiedz)
+		{
+			cout <<"Dobra odpowiedź"<<endl;
+			punkty++;
+		}else
+		{
+			cout <<"Zła odpowiedź"<<endl;
+		}
 
 
 	}
 
-	cout << "Uzyskałeś : " << punkty << " punktów" << endl; // prints !!!Hello World!!!
+	cout << "Uzyskałeś : " << punkty << " punktów" << endl;
 	return 0;
 }
