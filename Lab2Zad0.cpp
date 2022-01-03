@@ -1,10 +1,12 @@
 
 
+
 #include <iostream>
 using namespace std;
 
 
-const int n=4;
+const int n=3;
+int j=1;
 int punkty=0;
 
 struct Zadaj{
@@ -13,10 +15,28 @@ struct Zadaj{
 Zadaj Wczytaj [n]=
 {
 
-	{"No to zaczynamy! Z iloma krajami graniczy Polska?","7","8","9","b"},
-	{"Dokończ tytuł słynnego westernu: Dobry, zły i...","brzydki","głupi","obojętny","a"},
-	{"Prosta w geometrii...","ma początek, ale nie ma końca","ma koniec, ale nie ma początku","nie ma początku oraz nie ma końca","c"},
-	{"Data terrorystycznego ataku na WTC to:","11 sierpnia 2001 r","11 września 2001 r.","11 października 2001 r.","b"}
+
+
+
+
+	{"Jaki odglos wydaje kot?",
+	"miau",
+	"hau",
+	"muu",
+	"a"},
+
+	{"Kto jest najwaznejszy w polsce?",
+	"prezydent",
+	"prezes",
+	"premier",
+	"b"},
+
+	{"Jezyk JAVA to jezyk poziomu",
+	"wysokiego",
+	"maszynowy",
+	"posredni",
+	 "   c"}
+
 };
 
 
@@ -25,7 +45,7 @@ int main() {
 
 	{
 		string odp;
-		cout << "Pytanie nr: " << i << endl;
+		cout << "Pytanie nr: " << j << endl;
 		cout << Wczytaj[i].pytanie << endl;
 		cout << "Odp A:" << Wczytaj[i].oa<< endl;
 		cout << "Odp B:" << Wczytaj[i].ob<< endl;
@@ -40,7 +60,7 @@ int main() {
 		{
 			cout <<"Zła odpowiedź"<<endl;
 		}
-
+		j++;
 
 	}
 
