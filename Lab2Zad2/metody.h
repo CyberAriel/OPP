@@ -10,22 +10,33 @@
 #include <iostream>
 #include<fstream>
 using namespace std;
+/*
+class Plik
+{
 
-class fun{
+
 public:
-	void abc();
+string plik;
+Plik(string="plik.txt");
+void wczytaj();
+
+
+
+
 };
 
-
-
+*/
 class Pytania
 {
 
-public:
+private:
+	string plik;
 	string tab1 [6];
-		string pytanie,oa,ob,oc,odpowiedz;
-		int punkty=0;
+			string pytanie,oa,ob,oc,odpowiedz;
+			int punkty=0;
+public:
 
+Pytania(string="plik.txt");
 	void Zadaj();
 
 	void Wczytaj(string p, string a, string b, string c, string pr);

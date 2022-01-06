@@ -7,8 +7,11 @@ using namespace std;
 int main() {
 
 
-	fun f;
-	f.abc();
+/*
+Plik a1;
+a1.wczytaj();
+
+*/
 
 	Pytania p1,p2,p3,p4;
 

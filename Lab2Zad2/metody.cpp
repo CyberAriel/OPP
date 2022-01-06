@@ -2,13 +2,21 @@
 #include <iostream>
 #include<fstream>
 using namespace std;
-
-
-void fun::abc()
+/*
+Plik::Plik(string p)
 {
-	cout<<"cos1"<<endl;
+plik=p;
 }
+void Plik::wczytaj()
+{
+cout<<plik<<endl;
+}
+*/
 
+Pytania::Pytania(string p)
+{
+	plik=p;
+}
 void Pytania::Zadaj()
 	{
 
@@ -50,13 +58,13 @@ void Pytania::Punkt()
 
 void Pytania::WczytajZPliku(int x)
 		{
-cout<<"wczytajzpliku"<<endl;
+//cout<<"wczytajzpliku"<<endl;
 int z=0;
 int y=0;
 
 
 		string str;
-		ifstream ifi("plik.txt");
+		ifstream ifi(plik);
 		if (ifi)
 		{
 		  while (ifi.good())
@@ -73,7 +81,7 @@ int y=0;
 		    		 	 tab1[z]=str;
 		   		    }
 		     }
-		    cout <<z<<" "<<y<<" "<< str <<endl;
+		   // cout <<z<<" "<<y<<" "<< str <<endl;
 		    z++;
 		    y++;
 		  }
@@ -94,7 +102,7 @@ for (int k=0; k<=6; k++)
 
 void Pytania::WczytajTablice()
 {
-	cout<<"wczytajtablice"<<endl;
+	//cout<<"wczytaj"<<endl;
 	pytanie=tab1[1];
 	oa=tab1[2];
 	ob=tab1[3];
