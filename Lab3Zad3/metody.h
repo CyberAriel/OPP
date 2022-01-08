@@ -15,13 +15,15 @@ class Punkt
 private:
 	int x;
 	int y;
+	int i=0;
 
 
 public:
+	static int s;
 Punkt(int a=0,int b=0);
 
 void Odczyt();
-
+void OdczytZmiennej();
 
 ~Punkt();
 
